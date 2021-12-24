@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage bena's coffee</title>
+  <link rel="stylesheet" href="css/page-css/homePage.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/12f9c95a9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="body__header">
+    <nav class="navbar">
+
+      <div class="logo">
+        <a class="logo-link" href="index.html">
+          <img class="logo-link-img" src="images/real-images/logo-benas.jpeg" alt="logo-benas">
+        </a>
+        <a class="logo-text-link" href="index.html">Bena's</a>
+      </div>
+
+      <ul class="navigation">
+        <li class="home active"><a href="homepage.html">Home</a></li>
+        <li class="about"><a href="about.html">About</a></li>
+        <li class="our-menu"><a href="menu.html">Our Menu</a></li>
+        <li class="contact"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero image -->
+  <section class="hero-wrapper">
+    <picture class="hero heroFirst"></picture>
+    <picture class="hero heroSecond"></picture>
+    <picture class="hero heroThird"></picture>
+
+    <div class="hero-content">
+      <h2 class="hero-content__h2 slide-in-subTitle">Welcome to</h2>
+      <h1 class="hero-content__h1 slide-in-title">BENA'S COFFEE</h1>
+    </div>
+
+    <div class="switch-btn">
+      <div class="btn btn-first"></div>
+      <div class="btn btn-second"></div>
+      <div class="btn btn-third"></div>
+    </div>
+  </section>
+
+
+  <main class="main-content">
+    <!-- navigation image -->
+    <section class="other-pages">
+      <div class="other-page-wrapper">
+
+        <!-- about -->
+        <div class="card about-card">
+          <!-- tulis source image kaya gini -->
+          <picture class="img-wrapper">
+            <img class="about__img" srcset="
+            https://ik.imagekit.io/hudyusuf/about-us.png?updatedAt=1636882094793,
+            images//compressed-and-used-image/png:jpg-img/about-us1.png " alt=" kitchen img">
+          </picture>
+          <div class="desc">
+            <h2 class="about__title">More about us</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto ullam
+              nulla.Pariatur, ullam. Labore.</p>
+            <a href="about.html" class="about__link">Full Story</a>
+          </div>
+        </div>
+
+        <!-- our menu -->
+        <div class="card our-menu-card">
+          <div class="desc">
+            <h2 class="ourMenu__title">See our menu </h2>
+            <p class="ourMenu__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto ullam
+              nulla.Pariatur, ullam. Labore.</p>
+            <a href="menu.html" class="ourMenu__link">All Menu</a>
+          </div>
+          <picture class="img-wrapper">
+            <img class="ourMenu__img" srcset="
+            https://ik.imagekit.io/hudyusuf/our-menu.jpeg?updatedAt=1636878313675,
+            images/compressed-and-used-image/png:jpg-img/our-menu.jpeg" alt="coffee and cake">
+          </picture>
+        </div>
+
+        <!-- contact -->
+        <div class="card contact-card">
+          <picture class="img-wrapper">
+            <img class="contact__img" srcset="
+            https://ik.imagekit.io/hudyusuf/contact-us.jpeg?updatedAt=1636878353439,
+            images/compressed-and-used-image/png:jpg-img/contact-us.jpeg" alt="outside img">
+          </picture>
+          <div class="desc">
+            <h2 class="contact__title">Wanna say something?</h2>
+            <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto ullam
+              nulla.Pariatur, ullam. Labore.</p>
+            <a href="contact.html" class="contact__link">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="svg-background-other-page">
+        <img src="svg/wave-haikei.svg" alt="svg">
+        <img src="svg/wave-haikei.svg" alt="svg">
+        <img src="svg/wave-haikei.svg" alt="svg">
+        <img src="svg/wave-haikei.svg" alt="svg">
+        <!-- <img src="wave-haikei (1).svg" alt=""> -->
+      </div>
+
+    </section>
+
+    <!-- =================== -->
+    <!------- quick look ------>
+    <!-- =================== -->
+
+    <section class="quick-look">
+      <div class="svg-background-quick-look">
+        <img src="svg/wave-haikei2.svg" alt="svg">
+        <img src="svg/wave-haikei2.svg" alt="svg">
+        <img src="svg/wave-haikei2.svg" alt="svg">
+        <img src="svg/wave-haikei2.svg" alt="svg">
+        <!-- <img `src="wave-haikei (1).svg" alt=""> -->
+      </div>
+
+      <div class="quick-look-title">
+        <h2>Quick Look</h2>
+      </div>
+
+      <div class="tab-page">
+
+        <div class="tab-links">
+          <h2 class="tab-link tab-first-link">SWEET STUFF</h2>
+          <h2 class="tab-link tab-second-link curent-link">BEST COFFEE</h2>
+          <h2 class="tab-link tab-third-link">NEW BEANS</h2>
+        </div>
+
+
+        <!-- Sweet Stuff -->
+        <div class="tab-contents">
+
+          <div class="tab-content sweet-stuff">
+            <!-- Swiper -->
+            <div class="swiper quick-look-swiper slider1">
+              <div class="swiper-wrapper">
+                <!-- disini swiper slidenya dibuat secara dinamic -->
+              </div>
+            </div>
+            <div class="nav-arrow quick-look-arrow quick-look-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="nav-arrow quick-look-arrow quick-look-next"><i class="fas fa-chevron-right"></i></div>
+
+          </div>
+
+          <!-- Best Coffee -->
+          <div class="tab-content best-coffee">
+            <!-- Swiper -->
+            <div class="swiper quick-look-swiper slider2">
+              <div class="swiper-wrapper">
+                <!-- disini swiper slidenya dibuat secara dinamic -->
+              </div>
+            </div>
+            <div class="nav-arrow quick-look-arrow quick-look-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="nav-arrow quick-look-arrow quick-look-next"><i class="fas fa-chevron-right"></i></div>
+
+          </div>
+
+          <!-- New Beans -->
+          <div class="tab-content new-beans">
+            <!-- Swiper -->
+            <div class="swiper quick-look-swiper slider3">
+              <div class="swiper-wrapper">
+                <!-- disini swiper slidenya dibuat secara dinamic -->
+              </div>
+            </div>
+            <div class="nav-arrow quick-look-arrow quick-look-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="nav-arrow quick-look-arrow quick-look-next"><i class="fas fa-chevron-right"></i></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recently on instagram image -->
+    <section class="instagram-feed">
+      <div class="instagram-feed__content">
+        <div class="svg-background-other-page">
+          <img src="svg/wave-haikei.svg" alt="svg">
+          <img src="svg/wave-haikei.svg" alt="svg">
+          <img src="svg/wave-haikei.svg" alt="svg">
+          <img src="svg/wave-haikei.svg" alt="svg">
+          <!-- <img src="wave-haikei (1).svg" alt=""> -->
+        </div>
+
+        <div class="instagram-feed-title">
+          <h2>Recently On Instagram </h2>
+        </div>
+
+        <div class="instagram-feed__content__image">
+          <!-- Swiper -->
+          <div class="swiper instagram-swiper slider4">
+            <div class="swiper-wrapper">
+
+
+
+              <!-- disini swiper slidenya dibuat secara dinamic -->
+            </div>
+          </div>
+
+          <div class="swiper-pagination instagram-pagination"></div>
+          <!-- <div class="nav-arrow instagram-arrow instagram-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="nav-arrow instagram-arrow instagram-next"><i class="fas fa-chevron-right"></i></div> -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="svg-background-footer">
+      <img src="svg/wave-heikei3.svg" alt="svg">
+      <img src="svg/wave-heikei3.svg" alt="svg">
+      <img src="svg/wave-heikei3.svg" alt="svg">
+      <img src="svg/wave-heikei3.svg" alt="svg">
+    </div>
+
+    <div class="footer-main-content">
+      <div class="footer-nav">
+        <div class="footer-logo-nav">
+          <a href="index.html">
+            <img src="images/real-images/logo-benas-2.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer-link-nav">
+          <ul class="footer-links">
+            <li class="footer-link"><a href="homepage.html">Home</a></li>
+            <li class="footer-link"><a href="about.html">About</a></li>
+            <li class="footer-link"><a href="menu.html">Our Menu</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-address">
+        <div class="location">
+          <a href="https://www.google.com/maps/place/Bena's+Coffee/@-8.5687941,116.0743674,17z/data=!3m1!4b1!4m5!3m4!1s0x2dcdc149933b850f:0x42547a06b67d8f51!8m2!3d-8.5687943!4d116.0765506"
+            class="location-link">
+            <h3>Jl.Saleh Sungkar No.22,Dayan Peken,Ampenan,Kota Mataram,Nusa Tenggara Barat</h3>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/Benas-Coffee-466297230447761/" class="social-media-link">
+            <div class="facebook-footer">
+              <i class="fab fa-facebook-square"></i>
+              <h4>Facebook</h4>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/benas.coffee/?hl=en" class="social-media-link">
+            <div class="instagram-footer">
+              <i class="fab fa-instagram-square "></i>
+              <h4>Instagram</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">&copy;benas coffee,2021. all right reserved</div>
+  </footer>
+
+  <!-- unavailable before subscribe -->
+
+
+  <script src="js/navigation.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/homePage.js"></script>
+  <!-- <script>
+
+  </script> -->
+</body>
+
+</html>

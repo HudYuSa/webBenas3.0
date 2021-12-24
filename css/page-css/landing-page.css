@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-primary: #fef1e6;
+  --primary-clr: #dc9440;
+  --secondary-clr: #39565a;
+  --default: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url(https://ik.imagekit.io/hudyusuf/bg-lp.png?updatedAt=1636878368527);
+  background-image: -o-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://ik.imagekit.io/hudyusuf/bg-lp.png?updatedAt=1636878368527);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://ik.imagekit.io/hudyusuf/bg-lp.png?updatedAt=1636878368527);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "ubuntu", sans-serif;
+  overflow: hidden;
+}
+
+/* main content */
+main {
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+
+.main-content {
+  max-width: 1300px;
+  margin: 20em 0;
+  opacity: 0;
+  -webkit-animation: slide-in2 1s 1s ease 1 forwards;
+  animation: slide-in2 1s 1s ease 1 forwards;
+}
+
+.main-content .title {
+  margin-bottom: 0.5em;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  color: var(--primary-clr);
+}
+
+.main-content .text {
+  font-size: clamp(1rem, 2vw, 4rem);
+  font-family: "roboto", sans-serif;
+  width: 80%;
+  line-height: clamp(1.2rem, 3vw, 2rem);
+  /* line-height: 2rem; */
+}
+
+.main-content .explore-button {
+  display: inline-block;
+  background-color: var(--primary-clr);
+  text-decoration: none;
+  color: var(--default);
+  font-size: clamp(1.3rem, 2vw, 5rem);
+  padding: 0.5em 1em;
+  border-radius: calc(100px + 2em);
+  margin-top: 2em;
+  border: 0em solid var(--secondary-clr);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.main-content .explore-button:hover {
+  color: var(--secondary-clr);
+  background-color: var(--bg-primary);
+}
+
+/* @supports (outline: .7em solid #dc93407c){
+  .main-content .explore-button:hover{
+    color: #eee;
+    -webkit-animation: outline .3s ease-out 1  forwards;
+            animation: outline .3s ease-out 1  forwards;
+  }
+} */
+.main-content .explore-button:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+@media (max-width: 780px) and (min-width: 481px) {
+  .main-content {
+    width: 100%;
+    margin: 12em 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-content {
+    margin: 8em 0;
+  }
+  .main-content .title {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+  }
+  .main-content .text {
+    font-size: clamp(0.8rem, 1.8vw, 3.5rem);
+    width: 100%;
+  }
+}
