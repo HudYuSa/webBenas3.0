@@ -1,5 +1,4 @@
 
-
 const hero = document.querySelector(".hero")
 const heroFirst = document.querySelector(".heroFirst")
 const heroSecond = document.querySelector(".heroSecond")
