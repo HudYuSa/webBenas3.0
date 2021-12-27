@@ -68,7 +68,6 @@ const filterList = (keyword) => {
     .forEach((li) => li.classList.remove("filtered"))
 }
 
-// console.log(list);
 list.forEach(li => {
   li.addEventListener("click", (() => {
     console.log(li.textContent)
