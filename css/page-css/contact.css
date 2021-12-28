@@ -377,6 +377,7 @@ form {
   width: 100%;
   padding: 0.5em 1em;
   color: #555;
+  pointer-events: none;
 }
 .country-name:focus {
   outline: none;

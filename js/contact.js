@@ -1,6 +1,10 @@
-const selectInput = document.querySelector(".select-input")
 const countryList = document.querySelector(".country-list")
 const countryName = document.querySelectorAll(".country-name")
+
+const submit = document.querySelector(".submit-btn")
+const yourName = document.querySelector(".your-name")
+const yourEmail = document.querySelector(".your-email")
+const selectInput = document.querySelector(".select-input")
 // const body = document.body
 // console.log(selectInput);
 // console.log(countryList);
@@ -21,6 +25,7 @@ let listPopUp = (element => {
   element.addEventListener("keydown", function listPopUp() {
     countryList.style.opacity = "1"
     countryList.style.pointerEvents = "auto"
+    countryName.style.pointerEvents = "auto"
     focused = true
   })
 })
@@ -28,6 +33,7 @@ let listPupDown = (element => {
   element.addEventListener("focusout", function listPopDown() {
     countryList.style.opacity = "0"
     countryList.style.poiterEvents = "none"
+    countryName.style.pointerEvents = "none"
     focused = false
     // console.log(focused);
     // countryName.forEach(country => {
@@ -86,7 +92,6 @@ window.addEventListener("keydown", ((e) => {
     const keyword = selectInput.value.trim().toLowerCase()
     filterList(keyword)
   }
-  console.log(e.key);
 }))
 
 // google map
@@ -105,3 +110,27 @@ if (bodyPage.offsetWidth < 480) {
 // }))
 const a = 3
 console.log(a);
+
+console.log(yourName.children[0]);
+console.log(yourEmail.children[0]);
+submit.addEventListener("click", ((e) => {
+  e.preventDefault()
+  let data = {
+    name: yourName.children[0].value,
+    email: yourEmail.children[0].value,
+    country: selectInput.value
+  };
+
+  console.log(JSON.stringify(data));
+  fetch("https://d6b4-110-136-219-4.ngrok.io/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data)
+  }).then(res => {
+    console.log("Request complete! response:", res);
+  }).catch(error => {
+    console.log(error);
+  })
+}))
