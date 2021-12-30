@@ -169,7 +169,8 @@ body {
   background-size: cover;
   background-position: center;
   font-family: "ubuntu", sans-serif;
-  overflow: hidden;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 /* main content */
