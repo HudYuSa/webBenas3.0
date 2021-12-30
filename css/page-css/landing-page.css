@@ -181,7 +181,7 @@ main {
 
 .main-content {
   max-width: 1300px;
-  margin: 20em 0;
+  margin: 25 em 0;
   opacity: 0;
   -webkit-animation: slide-in2 1s 1s ease 1 forwards;
   animation: slide-in2 1s 1s ease 1 forwards;
